@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+  "name": "Work Time",
+  "version": "1.0",
+
+  "description": "Focus on the work and keep track of it.",
+
+  "icons": {
+    "48": "icons/icon-48.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.mozilla.org/*"],
+      "js": ["workTime.js"]
+    }
+  ]
+}
